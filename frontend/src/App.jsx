@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState("Failed");
 
   useEffect(() => {
-    fetch("http://localhost:4000/demo")
+    fetch("http://54.211.9.166/demo/")
       .then((res) => res.json())
       .then((jsonRes) => setMessage(jsonRes))
       .catch(() => console.log("error in request"));
